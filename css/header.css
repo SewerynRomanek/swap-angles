@@ -1,0 +1,11 @@
+.header {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 100%;
+}
+
+.header__heading {
+    color: white;
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+}

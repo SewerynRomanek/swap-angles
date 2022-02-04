@@ -1,0 +1,10 @@
+footer {
+    background-color: black;
+    padding: 4px;
+}
+
+.footer__header {
+    font-family: 'Audiowide', cursive;
+    color: wheat;
+    text-align: center;
+}

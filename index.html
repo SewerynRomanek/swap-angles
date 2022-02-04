@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/from.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Zamiana kątów</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1 class="header__heading">Zamiana kątów</h1>
+    </header>
+    <main>
+        <form class="from js-from">
+            <fieldset class="from__fieldset">
+                <legend class="from__legend">Przelicz jednostke</legend>
+                <p class="from__paragraph from__paragraph--margin">Wybierz jednostke i wpisz wartość</p>
+                <p class="from__paragraph"><label><input class="from__imput js-from__imput" type="number" name="worth"
+                            required min="0" max="360" placeholder="00.00"></label>
+                    <select name="choose" class="from__select js-from__selected">
+                        <option value="deg">Stopnie</option>
+                        <option value="gra">Grady</option>
+                        <option value="rad">Radiany</option>
+                    </select>
+                </p>
+                <p class="from__paragraph from__paragraph--border">Wyniki</p>
+                <p class="from__paragraph"><label><input class="from__imput js-result" type="number" name="result"
+                            readonly></label>
+                    <select disabled name="choose" class="from__select js-choose">
+                        <option value="deg">Stopnie</option>
+                        <option value="gra">Grady</option>
+                        <option value="rad">Radiany</option>
+                    </select>
+                </p>
+                <p class="from__paragraph"><label><input class="from__imput js-second__result" type="number"
+                            name="result" readonly></label>
+                    <select disabled name="choose" class="from__select js-second__choose">
+                        <option value="deg">Stopnie</option>
+                        <option value="gra">Grady</option>
+                        <option value="rad">Radiany</option>
+                    </select>
+                </p>
+                <button class="from__button">Przelicz</button>
+                <button class="from__button from__button--margin js-from__button">Wyczyść</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__header">Seweryn Romanek®</h2>1
+    </footer>
+</body>
+
+</html>
