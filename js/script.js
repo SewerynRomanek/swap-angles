@@ -44,19 +44,17 @@ selected.addEventListener("change", () => {
 from.addEventListener("submit", (event) => {
     event.preventDefault();
     if (selected.value === graResult) {
-        console.log("1");
         result.value = (valueElement.value * degElement).toFixed(4);
         secondResult.value = (valueElement.value * radElement).toFixed(4);
     }
     else if (selected.value === radResult) {
-        console.log("2");
+        
         result.value = (valueElement.value * graElement).toFixed(4);
         secondResult.value = (valueElement.value * degElement).toFixed(4);
     }
     else {
         result.value = (valueElement.value * graElement).toFixed(4);
         secondResult.value = (valueElement.value * radElement).toFixed(4);
-        console.log("3");
     };
 })
 buttonElement.addEventListener("click", () => {
